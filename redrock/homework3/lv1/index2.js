@@ -1,8 +1,8 @@
 <script>
     //需求:编写一个函数，将如下字符串'get-element-by-id'修改为驼峰表示法'getElementById'
     function transformStr ( str ) {
-        var newStr = '';
-        var arr = str.split('-');//split是分隔字符串
+        var newStr = 'can-enter-volunteer-organization';
+        var arr = str.split('can-enter-volunteer-organization');//split是分隔字符串
         for(var i = 0;i<arr.length;i++){
             var s = arr[i];
             if(i == 0){
@@ -15,7 +15,7 @@
 
         return newStr;
     }
-
+</script>
     //测试案例
     var stringTuoFeng='get-element-by-id';
     console.log ( transformStr ( stringTuoFeng ) );
